@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html  >
+<html lang="es">
 <head>
-  <!-- Site made with Mobirise Website Builder v5.9.16, https://mobirise.com -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Mobirise v5.9.16, mobirise.com">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <link rel="shortcut icon" href="assets/images/icon-128x128.png" type="image/x-icon">
-  <meta name="description" content="¡Explora el potencial ilimitado de la tecnología con nosotros! En el instante en que aterrizas en nuestra página, te sumergirás en el mundo de posibilidades que ofrecemos. ¿Sueñas con una aplicación web elegante o una experiencia móvil única? Estás en el lugar adecuado.">
-  
+  <meta name="description" content="¡Explora el potencial ilimitado de la tecnología con StrainTeam Developers! Desarrollo de aplicaciones móviles Android, plataformas web a medida, facturación electrónica y soluciones empresariales.">
   
   <title>Inicio - StrainTeam Developers</title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
@@ -20,25 +18,183 @@
   <link rel="stylesheet" href="assets/socicon/css/styles.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link href="assets/fonts/style.css" rel="stylesheet">
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=9YQwWt"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=9YQwWt" type="text/css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=9YQwWt">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=9YQwWt" type="text/css">
 
-  
-  
-  
+  <style>
+    /* Integración armónica de Proyectos con el diseño Mobirise */
+    .proyectos-section {
+      padding-top: 5rem;
+      padding-bottom: 6rem;
+      background-color: #fafafa;
+    }
+    .proyectos-section .card-wrapper {
+      background: #ffffff;
+      padding: 2.3rem 1.9rem;
+      border-radius: 10px;
+      border: 1px solid rgba(0, 0, 0, 0.07);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.28s ease;
+    }
+    .proyectos-section .card-wrapper:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 28px rgba(0, 0, 0, 0.08);
+      border-color: #86b0e3;
+    }
+    .proyectos-section .project-icon-top {
+      font-size: 3.4rem;
+      color: #86b0e3;
+      margin-bottom: 1.1rem;
+      display: inline-block;
+    }
+    .proyectos-section .project-tag {
+      font-size: 0.72rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #2d3a4a;
+      background-color: #eef2f7;
+      padding: 0.28rem 0.75rem;
+      border-radius: 50px;
+      display: inline-block;
+      margin-bottom: 0.8rem;
+    }
+    .proyectos-section .card-title {
+      color: #2d3a4a;
+      margin-bottom: 0.6rem;
+    }
+    .proyectos-section .card-text {
+      color: #4b5563;
+      font-size: 0.98rem;
+      line-height: 1.55;
+    }
+
+    /* CONTENEDOR DE ACCIONES / BOTONES */
+    .project-actions {
+      margin-top: 1.6rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Botón Web Moderno */
+    .btn-action-web {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background-color: #2d3a4a;
+      color: #ffffff !important;
+      font-size: 0.88rem;
+      font-weight: 600;
+      padding: 0.58rem 1.25rem;
+      border-radius: 8px;
+      text-decoration: none !important;
+      transition: all 0.2s ease;
+      line-height: 1.2;
+      border: 1px solid transparent;
+    }
+    .btn-action-web:hover {
+      background-color: #4082d3;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 14px rgba(64, 130, 211, 0.25);
+      color: #ffffff !important;
+    }
+    .btn-action-web svg {
+      width: 17px;
+      height: 17px;
+      fill: currentColor;
+    }
+
+    /* Badge Oficial Google Play Store */
+    .btn-action-play {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      background-color: #0b0f19;
+      color: #ffffff !important;
+      padding: 0.42rem 1.05rem;
+      border-radius: 8px;
+      text-decoration: none !important;
+      transition: all 0.2s ease;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      text-align: left;
+    }
+    .btn-action-play:hover {
+      background-color: #1e293b;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+      color: #ffffff !important;
+    }
+    .btn-action-play .play-svg {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+    }
+    .btn-action-play .play-texts {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.05;
+    }
+    .btn-action-play .play-sub {
+      font-size: 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      opacity: 0.82;
+      font-weight: 500;
+    }
+    .btn-action-play .play-main {
+      font-size: 0.88rem;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+    }
+
+    /* Botón Directo WhatsApp */
+    .btn-action-wa {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      background-color: #25d366;
+      color: #ffffff !important;
+      font-size: 0.88rem;
+      font-weight: 600;
+      padding: 0.58rem 1.25rem;
+      border-radius: 8px;
+      text-decoration: none !important;
+      transition: all 0.2s ease;
+      line-height: 1.2;
+      border: 1px solid transparent;
+    }
+    .btn-action-wa:hover {
+      background-color: #1eb956;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 14px rgba(37, 211, 102, 0.25);
+      color: #ffffff !important;
+    }
+    .btn-action-wa .socicon {
+      font-size: 1.05rem !important;
+      line-height: 1;
+      margin: 0 !important;
+    }
+  </style>
 </head>
 <body>
   
+  <!-- NAVBAR -->
   <section data-bs-version="5.2" class="menu menu2 cid-sFCw1qGFAI" once="menu" id="menu2-23">
-    
     <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
         <div class="container">
             <div class="navbar-brand">
                 <span class="navbar-logo">
-                    <a href="index.html#top">
-                        <img src="assets/images/icon-white-128x128.png" alt="Logo" style="height: 3rem;">
+                    <a href="#top">
+                        <img src="assets/images/icon-white-128x128.png" alt="StrainTeam Developers" style="height: 3rem;">
                     </a>
                 </span>
-                
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <div class="hamburger">
@@ -49,72 +205,68 @@
                 </div>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-white display-4" href="#top">Inicio</a></li><li class="nav-item"><a class="nav-link link text-white display-4" href="index.html#features1-1i">Servicios</a></li>
-                    
-                    <li class="nav-item"><a class="nav-link link text-white text-primary display-4" href="index.html#team2-5">Equipo</a>
-                    </li><li class="nav-item"><a class="nav-link link text-white text-primary display-4" href="index.html#contacts1-2">Contacto</a></li></ul>
-                
-                
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
+                    <li class="nav-item"><a class="nav-link link text-white display-4" href="#top">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link link text-white display-4" href="#features1-1i">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link link text-white display-4" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link link text-white text-primary display-4" href="#team2-5">Equipo</a></li>
+                    <li class="nav-item"><a class="nav-link link text-white text-primary display-4" href="#contacts1-2">Contacto</a></li>
+                </ul>
             </div>
         </div>
     </nav>
-</section>
+  </section>
 
-<section data-bs-version="5.2" class="header14 cid-sFzxmVl7J6" id="header14-1f">
-
-    
-
-    
-
+  <!-- HEADER / HERO -->
+  <section data-bs-version="5.2" class="header14 cid-sFzxmVl7J6" id="header14-1f">
     <div class="container">
         <div class="row justify-content-center align-items-center">
             <div class="col-12 col-md-6 image-wrapper">
-                <img src="assets/images/software-integration-rafiki.svg" alt="Mobirise Website Builder">
+                <img src="assets/images/software-integration-rafiki.svg" alt="StrainTeam Developers">
             </div>
             <div class="col-12 col-md">
                 <div class="text-wrapper">
                     <h1 class="mbr-section-title mbr-fonts-style mb-3 display-1"><strong>StrainTeam Developers</strong></h1>
                     <p class="mbr-text mbr-fonts-style display-7">
-                        ¡Explora el potencial ilimitado de la tecnología con nosotros! En el instante en que aterrizas en nuestra página, te sumergirás en el mundo de posibilidades que ofrecemos. ¿Sueñas con una aplicación web elegante o una experiencia móvil única? Estás en el lugar adecuado.</p>
-                    <div class="mbr-section-btn mt-3"><a class="btn btn-secondary display-4" href="https://wa.me/50586006856">Contáctanos</a></div>
+                        ¡Explora el potencial ilimitado de la tecnología con nosotros! En el instante en que aterrizas en nuestra página, te sumergirás en el mundo de posibilidades que ofrecemos. ¿Sueñas con una aplicación web elegante o una experiencia móvil única? Estás en el lugar adecuado.
+                    </p>
+                    <div class="mbr-section-btn mt-3">
+                        <a class="btn btn-secondary display-4" href="https://wa.me/50586006856" target="_blank" rel="noopener">Contáctanos</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
+  </section>
 
-<section data-bs-version="5.2" class="header14 cid-sFzz5E692j" id="header14-1j">
-
-    
-
-    
-
+  <!-- ACERCA DE -->
+  <section data-bs-version="5.2" class="header14 cid-sFzz5E692j" id="header14-1j">
     <div class="container">
         <div class="row justify-content-center align-items-center">
             <div class="col-12 col-md-6 image-wrapper">
-                <img src="assets/images/mobile-bro.svg" alt="Acerca de">
+                <img src="assets/images/mobile-bro.svg" alt="Acerca de StrainTeam">
             </div>
             <div class="col-12 col-md">
                 <div class="text-wrapper">
                     <h1 class="mbr-section-title mbr-fonts-style mb-3 display-2"><strong>Acerca de</strong></h1>
-                    <p class="mbr-text mbr-fonts-style display-7">Somos un equipo dedicado de mentes creativas y apasionadas por la tecnología. En el corazón de nuestro pequeño grupo de desarrolladores, yace la misión de convertir ideas en experiencias digitales impactantes. Con una mezcla única de habilidades y experiencia, estamos listos para abrazar cualquier desafío que nos presentes.<br><br>Desde el diseño hasta la implementación, nuestro enfoque colaborativo garantiza soluciones que no solo cumplen con tus expectativas, sino que las superan. Creemos en la transparencia, la eficiencia y la innovación constante. Tu visión es nuestro punto de partida, y trabajamos incansablemente para llevarla más allá de tus expectativas.<br></p>
-                    
+                    <p class="mbr-text mbr-fonts-style display-7">
+                        Somos un equipo dedicado de mentes creativas y apasionadas por la tecnología. En el corazón de nuestro pequeño grupo de desarrolladores, yace la misión de convertir ideas en experiencias digitales impactantes. Con una mezcla única de habilidades y experiencia, estamos listos para abrazar cualquier desafío que nos presentes.<br><br>
+                        Desde el diseño hasta la implementación, nuestro enfoque colaborativo garantiza soluciones que no solo cumplen con tus expectativas, sino que las superan. Creemos en la transparencia, la eficiencia y la innovación constante. Tu visión es nuestro punto de partida, y trabajamos incansablemente para llevarla más allá de tus expectativas.<br>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
-</section>
+  </section>
 
-<section data-bs-version="5.2" class="features1 cid-sFzyUE9AaP" id="features1-1i">
-    
-
-    
+  <!-- SERVICIOS -->
+  <section data-bs-version="5.2" class="features1 cid-sFzyUE9AaP" id="features1-1i">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
-                    <strong>Servicios</strong></h3>
-                
+                    <strong>Servicios</strong>
+                </h3>
             </div>
         </div>
         <div class="row">
@@ -164,30 +316,185 @@
             </div>
         </div>
     </div>
-</section>
+  </section>
 
-<section data-bs-version="5.2" class="content4 cid-u2B0DYiVzl" id="content4-7">
-    
+  <!-- SECCIÓN DE PROYECTOS -->
+  <section data-bs-version="5.2" class="features1 proyectos-section" id="proyectos">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10">
+                <h3 class="mbr-section-title mbr-fonts-style align-center mb-2 display-2">
+                    <strong>Nuestros Proyectos</strong>
+                </h3>
+                <h4 class="mbr-section-subtitle mbr-fonts-style align-center mb-5 display-7" style="color: #6c757d;">
+                    Conoce las plataformas, sistemas y desarrollos empresariales que hemos creado e implementado.
+                </h4>
+            </div>
+        </div>
 
-    
-    
+        <div class="row">
+            <!-- 1. Clickash -->
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card-wrapper">
+                    <div class="card-box align-center">
+                        <div>
+                            <span class="mbr-iconfont mobi-mbri-cash project-icon-top"></span>
+                        </div>
+                        <span class="project-tag">Plataforma Web & App</span>
+                        <h5 class="card-title mbr-fonts-style display-5"><strong>Clickash</strong></h5>
+                        <p class="card-text mbr-fonts-style">
+                            Solución integral para sorteos nacionales. Dispone de panel administrativo web y aplicación nativa para Android.
+                        </p>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://clickash.strain-team.com" target="_blank" rel="noopener" class="btn-action-web">
+                            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                            <span>Visitar Web</span>
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.strainteam.clickashadmin&pcampaignid=web_share" target="_blank" rel="noopener" class="btn-action-play">
+                            <svg class="play-svg" viewBox="0 0 24 24">
+                              <path fill="#4285F4" d="M3.6 1.4c-.3.3-.4.8-.4 1.4v18.4c0 .6.1 1.1.4 1.4l.1.1 10.3-10.3v-.2L3.7 1.3l-.1.1z"/>
+                              <path fill="#FBBC04" d="M17.5 15.6l-3.5-3.5v-.2l3.5-3.5.1.1 4.1 2.3c1.2.7 1.2 1.8 0 2.5l-4.2 2.3z"/>
+                              <path fill="#EA4335" d="M14 12.1L3.6 22.5c.4.4 1.1.4 1.8 0l12.1-6.9-3.5-3.5z"/>
+                              <path fill="#34A853" d="M14 11.9l3.5-3.5L5.4 1.5c-.7-.4-1.4-.4-1.8 0L14 11.9z"/>
+                            </svg>
+                            <span class="play-texts">
+                              <span class="play-sub">Disponible en</span>
+                              <span class="play-main">Google Play</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Facturación -->
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card-wrapper">
+                    <div class="card-box align-center">
+                        <div>
+                            <span class="mbr-iconfont mobi-mbri-file project-icon-top"></span>
+                        </div>
+                        <span class="project-tag">Sistema Web SaaS</span>
+                        <h5 class="card-title mbr-fonts-style display-5"><strong>Facturación</strong></h5>
+                        <p class="card-text mbr-fonts-style">
+                            Plataforma en la nube para emisión de facturas y recibos, gestión de inventarios multialmacén, cotizaciones, cuentas comerciales y reportería analítica.
+                        </p>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://facturacion.strain-team.com" target="_blank" rel="noopener" class="btn-action-web">
+                            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                            <span>Ir al Sistema</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Sistema Financieras -->
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card-wrapper">
+                    <div class="card-box align-center">
+                        <div>
+                            <span class="mbr-iconfont mobi-mbri-bulleted-list project-icon-top"></span>
+                        </div>
+                        <span class="project-tag">Gestión de Crédito</span>
+                        <h5 class="card-title mbr-fonts-style display-5"><strong>Sistema Financieras</strong></h5>
+                        <p class="card-text mbr-fonts-style">
+                            Administración completa de préstamos, cálculo de amortizaciones e intereses, control de carteras, liquidación de cobradores y monitoreo de morosidad.
+                        </p>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://wa.me/50585907659?text=Hola,%20deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20Sistema%20para%20Financieras" target="_blank" rel="noopener" class="btn-action-wa">
+                            <span class="socicon socicon-whatsapp"></span>
+                            <span>Contacto WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Sistema Agencias de Envíos -->
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card-wrapper">
+                    <div class="card-box align-center">
+                        <div>
+                            <span class="mbr-iconfont mobi-mbri-delivery project-icon-top"></span>
+                        </div>
+                        <span class="project-tag">Logística y Encomiendas</span>
+                        <h5 class="card-title mbr-fonts-style display-5"><strong>Agencias de Envíos</strong></h5>
+                        <p class="card-text mbr-fonts-style">
+                            Software para administración logística de paquetería: emisión de guías con código de barras, tracking en vivo, liquidación de repartidores y sucursales.
+                        </p>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://wa.me/50586006856?text=Hola,%20deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20Sistema%20de%20Administraci%C3%B3n%20de%20Agencias%20de%20Env%C3%ADos" target="_blank" rel="noopener" class="btn-action-wa">
+                            <span class="socicon socicon-whatsapp"></span>
+                            <span>Contacto WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Transporte de Carga -->
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card-wrapper">
+                    <div class="card-box align-center">
+                        <div>
+                            <span class="mbr-iconfont mobi-mbri-speed project-icon-top"></span>
+                        </div>
+                        <span class="project-tag">Flotas y Transporte</span>
+                        <h5 class="card-title mbr-fonts-style display-5"><strong>Transporte de Carga</strong></h5>
+                        <p class="card-text mbr-fonts-style">
+                            Sistema para control operativo de transporte: asignación de fletes, gestión de cabezales, combustible
+                        </p>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://wa.me/50586006856?text=Hola,%20deseo%20informaci%C3%B3n%20sobre%20el%20Sistema%20para%20Administraci%C3%B3n%20y%20Control%20de%20Transporte%20de%20Carga" target="_blank" rel="noopener" class="btn-action-wa">
+                            <span class="socicon socicon-whatsapp"></span>
+                            <span>Contacto WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. Software a Medida -->
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card-wrapper">
+                    <div class="card-box align-center">
+                        <div>
+                            <span class="mbr-iconfont mobi-mbri-layers project-icon-top"></span>
+                        </div>
+                        <span class="project-tag">Desarrollo Exclusivo</span>
+                        <h5 class="card-title mbr-fonts-style display-5"><strong>Software a Medida</strong></h5>
+                        <p class="card-text mbr-fonts-style">
+                            Diseñamos y programamos aplicaciones a la medida (web, móvil o escritorio) ajustadas punto a punto a la operativa particular de tu empresa.
+                        </p>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://wa.me/50586006856?text=Hola,%20quisiera%20cotizar%20un%20Software%20a%20Medida%20para%20mi%20negocio" target="_blank" rel="noopener" class="btn-action-wa">
+                            <span class="socicon socicon-whatsapp"></span>
+                            <span>Contacto WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- EQUIPO TÍTULO -->
+  <section data-bs-version="5.2" class="content4 cid-u2B0DYiVzl" id="content4-7">
     <div class="container">
         <div class="row justify-content-center">
             <div class="title col-md-12 col-lg-10">
                 <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-2">
-                    <strong>Nuestro equipo</strong></h3>
-                
-                
+                    <strong>Nuestro equipo</strong>
+                </h3>
             </div>
         </div>
     </div>
-</section>
+  </section>
 
-<section data-bs-version="5.2" class="team2 cid-u2AYkC2wBj" xmlns="http://www.w3.org/1999/html" id="team2-5">
-    
-
-    
-    
+  <!-- EQUIPO MIEMBROS -->
+  <section data-bs-version="5.2" class="team2 cid-u2AYkC2wBj" id="team2-5">
     <div class="container">
         <div class="item features-image">
             <div class="item-wrapper">
@@ -201,21 +508,17 @@
                         <div class="card-box">
                             <h5 class="card-title mbr-fonts-style m-0 mb-3 display-5"><strong>Jairo Paniagua</strong></h5>
                             <h6 class="card-subtitle mbr-fonts-style mb-3 display-4"><strong>Desarrollador de aplicaciones Android</strong></h6>
-                            
                             <div class="social-row display-7">
                                 <div class="soc-item">
-                                    <a href="https://www.linkedin.com/in/jairo-antonio-paniagua-garcia-628b41219/" target="_blank">
+                                    <a href="https://www.linkedin.com/in/jairo-antonio-paniagua-garcia-628b41219/" target="_blank" rel="noopener">
                                         <span class="mbr-iconfont socicon-linkedin socicon"></span>
                                     </a>
                                 </div>
                                 <div class="soc-item">
-                                    <a href="https://github.com/jey1322" target="_blank">
+                                    <a href="https://github.com/jey1322" target="_blank" rel="noopener">
                                         <span class="mbr-iconfont socicon-github socicon"></span>
                                     </a>
                                 </div>
-                                
-                                
-                                
                             </div>
                         </div>
                     </div>
@@ -234,21 +537,17 @@
                         <div class="card-box">
                             <h5 class="card-title mbr-fonts-style m-0 mb-3 display-5"><strong>Kenet Picado</strong></h5>
                             <h6 class="card-subtitle mbr-fonts-style mb-3 display-4"><strong>Desarrollador Web / Diseñador</strong></h6>
-                            
                             <div class="social-row display-7">
                                 <div class="soc-item">
-                                    <a href="https://www.linkedin.com/in/kenetpicado/" target="_blank">
+                                    <a href="https://www.linkedin.com/in/kenetpicado/" target="_blank" rel="noopener">
                                         <span class="mbr-iconfont socicon-linkedin socicon"></span>
                                     </a>
                                 </div>
                                 <div class="soc-item">
-                                    <a href="https://github.com/kenetpicado" target="_blank">
+                                    <a href="https://github.com/kenetpicado" target="_blank" rel="noopener">
                                         <span class="mbr-iconfont socicon-github socicon"></span>
                                     </a>
                                 </div>
-                                
-                                
-                                
                             </div>
                         </div>
                     </div>
@@ -267,53 +566,41 @@
                         <div class="card-box">
                             <h5 class="card-title mbr-fonts-style m-0 mb-3 display-5"><strong>Alvaro Puerto</strong></h5>
                             <h6 class="card-subtitle mbr-fonts-style mb-3 display-4"><strong>Desarrollador Web</strong></h6>
-                            
                             <div class="social-row display-7">
                                 <div class="soc-item">
-                                    <a href="https://www.linkedin.com/in/alvaro-puerto-tellez-2a6b111b4/" target="_blank">
+                                    <a href="https://www.linkedin.com/in/alvaro-puerto-tellez-2a6b111b4/" target="_blank" rel="noopener">
                                         <span class="mbr-iconfont socicon-linkedin socicon"></span>
                                     </a>
                                 </div>
                                 <div class="soc-item">
-                                    <a href="https://github.com/Alvaro-Puerto" target="_blank">
+                                    <a href="https://github.com/Alvaro-Puerto" target="_blank" rel="noopener">
                                         <span class="mbr-iconfont socicon-github socicon"></span>
                                     </a>
                                 </div>
-                                
-                                
-                                
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div><div class="item features-image">
+        </div>
+        <div class="item features-image">
             <div class="item-wrapper">
                 <div class="row align-items-center">
                     <div class="col-12 col-md-3">
                         <div class="image-wrapper">
-                            <img src="assets/images/salvador-1-596x596.jpg" alt="Salvador" data-slide-to="3" data-bs-slide-to="4">
+                            <img src="assets/images/salvador-1-596x596.jpg" alt="Salvador">
                         </div>
                     </div>
                     <div class="col-12 col-md">
                         <div class="card-box">
                             <h5 class="card-title mbr-fonts-style m-0 mb-3 display-5"><strong>Salvador Real</strong></h5>
                             <h6 class="card-subtitle mbr-fonts-style mb-3 display-4"><strong>Desarrollador de aplicaciones Android / Desarrollador Web</strong></h6>
-                            
                             <div class="social-row display-7">
                                 <div class="soc-item">
-                                    <a href="https://www.facebook.com/Mobirise/" target="_blank">
-                                        <span class="mbr-iconfont socicon-linkedin socicon"></span>
-                                    </a>
-                                </div>
-                                <div class="soc-item">
-                                    <a href="https://github.com/srealmoreno" target="_blank">
+                                    <a href="https://github.com/srealmoreno" target="_blank" rel="noopener">
                                         <span class="mbr-iconfont socicon-github socicon"></span>
                                     </a>
                                 </div>
-                                
-                                
-                                
                             </div>
                         </div>
                     </div>
@@ -321,19 +608,18 @@
             </div>
         </div>
     </div>
-</section>
+  </section>
 
-<section data-bs-version="5.2" class="contacts1 cid-u2AOhEqOjd" id="contacts1-2">
-
-    
-
-    
-    
+  <!-- CONTACTO -->
+  <section data-bs-version="5.2" class="contacts1 cid-u2AOhEqOjd" id="contacts1-2">
     <div class="container">
         <div class="mbr-section-head">
             <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
-                <strong>Contacto</strong></h3>
-            <h4 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-2 display-5">Si necesita más información no dude en contactar con nosotros.</h4>
+                <strong>Contacto</strong>
+            </h3>
+            <h4 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-2 display-5">
+                Si necesita más información no dude en contactar con nosotros.
+            </h4>
         </div>
         <div class="row justify-content-center mt-4">
             <div class="card col-12 col-lg-6">
@@ -343,9 +629,11 @@
                             <span class="mbr-iconfont socicon-whatsapp socicon"></span>
                         </div>
                         <h4 class="card-title mbr-fonts-style mb-2 display-2">
-                            <strong>Whatsapp</strong></h4>
-                        
-                        <h5 class="link mbr-fonts-style display-7"><a href="https://wa.me/50586006856" class="text-primary">Haz click aqui</a></h5>
+                            <strong>WhatsApp</strong>
+                        </h4>
+                        <h5 class="link mbr-fonts-style display-7">
+                            <a href="https://wa.me/50586006856" target="_blank" rel="noopener" class="text-primary">+505 8600 6856</a>
+                        </h5>
                     </div>
                 </div>
             </div>
@@ -356,75 +644,60 @@
                             <span class="mbr-iconfont mobi-mbri-mobile-2 mobi-mbri"></span>
                         </div>
                         <h4 class="card-title mbr-fonts-style align-center mb-2 display-2">
-                            <strong>Correo</strong></h4>
-                        
-                        <h5 class="link mbr-black mbr-fonts-style display-7">contacto@strain-team.com</h5>
+                            <strong>Correo</strong>
+                        </h4>
+                        <h5 class="link mbr-black mbr-fonts-style display-7">
+                            <a href="mailto:contacto@strain-team.com" class="text-primary">contacto@strain-team.com</a>
+                        </h5>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
+  </section>
 
-<section data-bs-version="5.2" class="share3 cid-u2APxrWFgw" id="share3-3">
-    
-     
-    
-    
-    
-
+  <!-- REDES SOCIALES -->
+  <section data-bs-version="5.2" class="share3 cid-u2APxrWFgw" id="share3-3">
     <div class="container">
         <div class="media-container-row">
             <div class="col-12">
-                <h3 class="mbr-section-title align-center mb-3 mbr-fonts-style display-2"><strong>Siguenos!</strong></h3>
+                <h3 class="mbr-section-title align-center mb-3 mbr-fonts-style display-2"><strong>¡Síguenos!</strong></h3>
                 <div class="social-list align-center">
-                   
-                    <a class="iconfont-wrapper bg-facebook m-2 " target="_blank" href="https://www.facebook.com/strainteamdevelopers">
-                            <span class="socicon-facebook socicon"></span>
-                        </a>
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
+                    <a class="iconfont-wrapper bg-facebook m-2" target="_blank" rel="noopener" href="https://www.facebook.com/strainteamdevelopers">
+                        <span class="socicon-facebook socicon"></span>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-</section>
+  </section>
 
-<section data-bs-version="5.2" class="footer3 cid-sFCygHrmNf" once="footers" id="footer3-24">
-
-    
-
-    
-
+  <!-- FOOTER -->
+  <section data-bs-version="5.2" class="footer3 cid-sFCygHrmNf" once="footers" id="footer3-24">
     <div class="container">
         <div class="row align-center mbr-white">
             <div class="row row-links">
                 <ul class="foot-menu">
-                    
-                    
-                    
-                    
-                    
-                <li class="foot-menu-item mbr-fonts-style display-7"><a href="index.html#top" class="text-white">Inicio</a></li><li class="foot-menu-item mbr-fonts-style display-7"><a href="index.html#features1-1i" class="text-white">Servicios</a></li><li class="foot-menu-item mbr-fonts-style display-7"><a href="index.html#team2-5" class="text-white">Equipo</a></li><li class="foot-menu-item mbr-fonts-style display-7"><a href="index.html#contacts1-2" class="text-white">Contacto</a></li></ul>
+                    <li class="foot-menu-item mbr-fonts-style display-7"><a href="#top" class="text-white">Inicio</a></li>
+                    <li class="foot-menu-item mbr-fonts-style display-7"><a href="#features1-1i" class="text-white">Servicios</a></li>
+                    <li class="foot-menu-item mbr-fonts-style display-7"><a href="#proyectos" class="text-white">Proyectos</a></li>
+                    <li class="foot-menu-item mbr-fonts-style display-7"><a href="#team2-5" class="text-white">Equipo</a></li>
+                    <li class="foot-menu-item mbr-fonts-style display-7"><a href="#contacts1-2" class="text-white">Contacto</a></li>
+                </ul>
             </div>
-            
             <div class="row row-copirayt">
                 <p class="mbr-text mb-0 mbr-fonts-style mbr-white align-center display-7">
-                    © Copyright 2025 StrainTeam Developers. All Rights Reserved.
+                    © Copyright 2025 StrainTeam Developers. Todos los derechos reservados.
                 </p>
             </div>
         </div>
     </div>
-</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: none;position: relative;height: 4rem;"><a href="https://mobiri.se/2282805" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">&#8204;</p><a style="z-index:1" href="https://mobirise.com"> Website Building Software</a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
-  
-  
+  </section>
+
+  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/ytplayer/index.js"></script>
+  <script src="assets/dropdown/js/navbar-dropdown.js"></script>
+  <script src="assets/theme/js/script.js"></script>
 </body>
 </html>
